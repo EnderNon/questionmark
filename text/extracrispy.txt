@@ -1,0 +1,19 @@
+<p> $D walks through RED door and stands on PURPLE</p>
+<p> $A walks through PURPLE door, on the right, and stands on GREEN</p>
+<p> $D stands on BLUE</p>
+<p> $B and $C goes through the BLUE door, on the left</p>
+<p> $B stands on GREEN</p>
+<p> $C goes through GREEN door and stands on  PINK</p>
+<p> $B goes to starting room and stands on ORANGE</p>
+<p> $D goes through the ORANGE door, on the left, and stands on PINK</p>
+<p> $A goes through the PINK door and stands on LIGHT BLUE</p>
+<p> $C and $D goes through the ORANGE door and $C stands on LIGHT BLUE</p>
+<p> $D stands on CYAN (GRAY)</p>
+<p> $B walks through LIGHT BLUE door, in the top left corner, and stands on CYAN (GRAY) </p>
+<p> $A stands on CYAN (GRAY) </p>
+<p> $C goes through the CYAN (GRAY) door and stands on YELLOW</p>
+<p> $A and $D stand on LIGHT BLUE</p>
+<p> $B walks to starting room</p>
+<p> $A stands on BROWN</p>
+<p> $B walks to the end</p>
+<p> Everyone walks to the end</p>
