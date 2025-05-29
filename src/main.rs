@@ -2,11 +2,6 @@
 #![allow(dead_code)]
 use leptos::prelude::*;
 use leptos_router::{
-    components::{
-        Router, 
-        Route, 
-        Routes
-    },
     params::Params,
     hooks::{
         use_query
