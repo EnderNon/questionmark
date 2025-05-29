@@ -1,0 +1,24 @@
+from replaced.txt do this:
+
+
+(1) (REGEX) replace to proper brackets for insert variables
+- Find \$(.)
+- Repl {\l$1}
+
+(2) replace to add quotes to not break leptos formatting (otherwise lack of spaces)
+- Find {
+- Repl " {
+- Find }
+- Repl } "
+
+(3) (REGEX) replace to add quotes at beginning and end of each line
+- Find ^|$
+- Repl "
+
+(4) Replace double quotes at beginning of some lines
+- Find "" 
+- Repl with literally nothing
+
+(5) (REGEX) replace to add p brackets
+- Find ^(.*)
+- Repl <p>$1</p>
