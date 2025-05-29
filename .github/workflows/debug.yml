@@ -28,7 +28,7 @@ jobs:
       - uses: Swatinem/rust-cache@v2
 
       - name: Build frontend
-        run: ./trunk build
+        run: trunk build
 
       - name: Upload artifacts
         uses: actions/upload-artifact@v4
