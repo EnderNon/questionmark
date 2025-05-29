@@ -45,37 +45,34 @@ pub fn App() -> impl IntoView {
     let d = RwSignal::new(untracked_players_from_url.d.unwrap_or("???".to_owned()));
     view! {
         
-        <p>"User A: " {a}</p>
-        <p>"User B: " {b}</p>
-        <p>"User C: " {c}</p>
-        <p>"User D: " {d}</p>
+        <p>"A: "{a} ", B: "{b} ", C: " {c} ", D: " {d}</p>
         <br/>
-        // from replaced.txt do this:
-        // (1) add p brackets
-        // - Find ^(.*)
-        // - Repl <p>$1</p>
-        // (2) 
+        // from replaced.txt do this.
+        // Using regex, add proper brackets for variables:
         // - Find \$(.)
         // - Repl {\l$1}
-        <p> {d} walks through RED door and stands on PURPLE</p>
-        <p> {a} walks through PURPLE door, on the right, and stands on GREEN</p>
-        <p> {d} stands on BLUE</p>
-        <p> {b} and {c} goes through the BLUE door, on the left</p>
-        <p> {b} stands on GREEN</p>
-        <p> {c} goes through GREEN door and stands on  PINK</p>
-        <p> {b} goes to starting room and stands on ORANGE</p>
-        <p> {d} goes through the ORANGE door, on the left, and stands on PINK</p>
-        <p> {a} goes through the PINK door and stands on LIGHT BLUE</p>
-        <p> {c} and {d} goes through the ORANGE door and {c} stands on LIGHT BLUE</p>
-        <p> {d} stands on CYAN (GRAY)</p>
-        <p> {b} walks through LIGHT BLUE door, in the top left corner, and stands on CYAN (GRAY) </p>
-        <p> {a} stands on CYAN (GRAY) </p>
-        <p> {c} goes through the CYAN (GRAY) door and stands on YELLOW</p>
-        <p> {a} and {d} stand on LIGHT BLUE</p>
-        <p> {b} walks to starting room</p>
-        <p> {a} stands on BROWN</p>
-        <p> {b} walks to the end</p>
-        <p> Everyone walks to the end</p>
+        // <pre> bracket is to show the text, exactly as is.
+        <pre>
+        {d} walks through RED door and stands on PURPLE
+        {a} walks through PURPLE door, on the right, and stands on GREEN
+        {d} stands on BLUE
+        {b} and {c} goes through the BLUE door, on the left
+        {b} stands on GREEN
+        {c} goes through GREEN door and stands on  PINK
+        {b} goes to starting room and stands on ORANGE
+        {d} goes through the ORANGE door, on the left, and stands on PINK
+        {a} goes through the PINK door and stands on LIGHT BLUE
+        {c} and {d} goes through the ORANGE door and {c} stands on LIGHT BLUE
+        {d} stands on CYAN (GRAY)
+        {b} walks through LIGHT BLUE door, in the top left corner, and stands on CYAN (GRAY) 
+        {a} stands on CYAN (GRAY) 
+        {c} goes through the CYAN (GRAY) door and stands on YELLOW
+        {a} and {d} stand on LIGHT BLUE
+        {b} walks to starting room
+        {a} stands on BROWN
+        {b} walks to the end
+        Everyone walks to the end
+        </pre>
         
     }.into_any()
 }
