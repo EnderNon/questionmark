@@ -1,19 +1,19 @@
- $D walks through RED door and stands on PURPLE
- $A walks through PURPLE door, on the right, and stands on GREEN
- $D stands on BLUE
- $B and $C goes through the BLUE door, on the left
- $B stands on GREEN
- $C goes through GREEN door and stands on  PINK
- $B goes to starting room and stands on ORANGE
- $D goes through the ORANGE door, on the left, and stands on PINK
- $A goes through the PINK door and stands on LIGHT BLUE
- $C and $D goes through the ORANGE door and $C stands on LIGHT BLUE
- $D stands on CYAN (GRAY)
- $B walks through LIGHT BLUE door, in the top left corner, and stands on CYAN (GRAY) 
- $A stands on CYAN (GRAY) 
- $C goes through the CYAN (GRAY) door and stands on YELLOW
- $A and $D stand on LIGHT BLUE
- $B walks to starting room
- $A stands on BROWN
- $B walks to the end
- Everyone walks to the end
+<p>{d} " walks through RED door and stands on PURPLE"</p>
+<p>{a} " walks through PURPLE door, on the right, and stands on GREEN"</p>
+<p>{d} " stands on BLUE"</p>
+<p>{b} " and " {c} " goes through the BLUE door, on the left"</p>
+<p>{b} " stands on GREEN"</p>
+<p>{c} " goes through GREEN door and stands on  PINK"</p>
+<p>{b} " goes to starting room and stands on ORANGE"</p>
+<p>{d} " goes through the ORANGE door, on the left, and stands on PINK"</p>
+<p>{a} " goes through the PINK door and stands on LIGHT BLUE"</p>
+<p>{c} " and " {d} " goes through the ORANGE door and " {c} " stands on LIGHT BLUE"</p>
+<p>{d} " stands on CYAN (GRAY)"</p>
+<p>{b} " walks through LIGHT BLUE door, in the top left corner, and stands on CYAN (GRAY) "</p>
+<p>{a} " stands on CYAN (GRAY) "</p>
+<p>{c} " goes through the CYAN (GRAY) door and stands on YELLOW"</p>
+<p>{a} " and " {d} " stand on LIGHT BLUE"</p>
+<p>{b} " walks to starting room"</p>
+<p>{a} " stands on BROWN"</p>
+<p>{b} " walks to the end"</p>
+<p>"Everyone walks to the end"</p>
