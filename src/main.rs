@@ -32,7 +32,9 @@ fn main() {
 
 #[component]
 pub fn App() -> impl IntoView {
+    // get from url bar once
     let players_from_url = use_query::<FourUsers>();
+    // theres a reason I made untracked a seperate variable I promise
     let untracked_players_from_url = players_from_url.get_untracked().unwrap_or(
         FourUsers { a: Some("Player1".to_owned()), b: Some("Player2".to_owned()), c: Some("Player3".to_owned()), d: Some("Player4".to_owned()) }
     );
