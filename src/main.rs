@@ -35,8 +35,7 @@ pub fn App() -> impl IntoView {
     let b = RwSignal::new(untracked_players_from_url.B);
     let c = RwSignal::new(untracked_players_from_url.C);
     let d = RwSignal::new(untracked_players_from_url.D);
-    view! {<Router>
-        <main>
-        </main>
-    </Router>}.into_any()
+    view! {
+        <p>"fr"</p>
+    }.into_any()
 }
