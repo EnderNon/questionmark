@@ -28,10 +28,14 @@ fn main() {
 #[component]
 pub fn App() -> impl IntoView {
     let players_from_url = use_query::<FourUsers>();
-    let untracked_players_from_url = players_from_url.get_untracked();
+    let untracked_players_from_url = players_from_url.get_untracked().unwrap_or(
+        FourUsers { A: Some("Player1".to_owned()), B: Some("Player2".to_owned()), C: Some("Player3".to_owned()), D: Some("Player4".to_owned()) }
+    );
+    let a = RwSignal::new(untracked_players_from_url.A);
+    let b = RwSignal::new(untracked_players_from_url.B);
+    let c = RwSignal::new(untracked_players_from_url.C);
+    let d = RwSignal::new(untracked_players_from_url.D);
     view! {<Router>
-        <nav>
-        </nav>
         <main>
         </main>
     </Router>}.into_any()
