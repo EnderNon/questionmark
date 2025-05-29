@@ -44,7 +44,7 @@ pub fn App() -> impl IntoView {
     let c = RwSignal::new(untracked_players_from_url.c.unwrap_or("???".to_owned()));
     let d = RwSignal::new(untracked_players_from_url.d.unwrap_or("???".to_owned()));
     view! {
-        
+        <h1> QuestionMark Quest - Maze puzzle</h1>
         <p>{d} " walks through RED door and stands on PURPLE"</p>
         <p>{a} " walks through PURPLE door, on the right, and stands on GREEN"</p>
         <p>{d} " stands on BLUE"</p>
