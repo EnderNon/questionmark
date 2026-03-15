@@ -9,3 +9,5 @@ Carriers should share a link with the following query parameters, which will aut
 ?a=User1&b=User2&c=User3&d=User4
 
 User1, User2 and User3 are players being carried. User4 should be the carrier.
+
+This entire thing is a static site so you can self host it if you want to. There is also a public version set at https://frfrnocap.men/sites/questionmark/ .
